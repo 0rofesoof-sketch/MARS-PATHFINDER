@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>3D Mars Map</title>
+    <style>
+        .map-container{position:relative;width:400px;height:400px;margin:auto}
+        .map-container img{width:400px;height:400px}
+        .danger{position:absolute;width:28px;height:28px;background:red;color:white;border:2px solid white;border-radius:50%;text-align:center;line-height:28px;font-weight:bold;cursor:pointer}
+        .danger:hover{background:darkred}
+        .danger-box{display:none;background:#3a1508;border:2px solid red;padding:10px;border-radius:10px;width:350px;margin:10px auto;text-align:left}
+    </style>
+</head>
+
+<body bgcolor="#24100b" text="white">
+
+<center>
+
+    <h1> 3D MARS MAP</h1>
+
+    <h3>Explore the Red Planet</h3>
+
+    <hr>
+
+    <div class="map-container">
+        <img
+        src="https://images-assets.nasa.gov/image/PIA00407/PIA00407~orig.jpg"
+        width="400"
+        height="400"
+        alt="Mars Planet"
+        >
+
+        <!-- 1 Olympus Mons - Dangerous Slopes -->
+        <div class="danger" style="top:120px;left:160px" onclick="document.getElementById('d1').style.display='block'">!</div>
+        <!-- 2 Valles Marineris - Deep Canyon -->
+        <div class="danger" style="top:210px;left:190px" onclick="document.getElementById('d2').style.display='block'">!</div>
+        <!-- 3 Hellas Basin - Deep Crater -->
+        <div class="danger" style="top:290px;left:250px" onclick="document.getElementById('d3').style.display='block'">!</div>
+        <!-- 4 Sand Dunes - Loose Sand -->
+        <div class="danger" style="top:180px;left:270px" onclick="document.getElementById('d4').style.display='block'">!</div>
+        <!-- 5 Gale Crater - Sharp Rocks -->
+        <div class="danger" style="top:240px;left:110px" onclick="document.getElementById('d5').style.display='block'">!</div>
+    </div>
+
+    <p><b>Click on any red dot (!) to see the danger</b></p>
+
+    <div id="d1" class="danger-box"><b>1. Olympus Mons - DANGER!</b><br>Steep slopes and sharp rocks. Rover could tip over.</div>
+    <div id="d2" class="danger-box"><b>2. Valles Marineris - DANGER!</b><br>Canyon 7 km deep. If rover falls, it cannot climb out.</div>
+    <div id="d3" class="danger-box"><b>3. Hellas Basin - DANGER!</b><br>Deepest crater, 8.2 km deep. Hard to exit.</div>
+    <div id="d4" class="danger-box"><b>4. Sand Dunes - DANGER!</b><br>Loose soft sand can trap rover wheels.</div>
+    <div id="d5" class="danger-box"><b>5. Gale Crater - DANGER!</b><br>Sharp rocks damaged Curiosity rover wheels.</div>
+
+    <h2>Important Locations on Mars</h2>
+
+    <h3>1. Olympus Mons</h3>
+    <p>The largest known volcano in the Solar System.</p>
+
+    <h3>2. Valles Marineris</h3>
+    <p>A huge canyon system on Mars.</p>
+
+    <h3>3. Gale Crater</h3>
+    <p>An impact crater explored by NASA's Curiosity rover.</p>
+
+    <h3>4. Polar Regions</h3>
+    <p>Areas containing water ice and frozen carbon dioxide.</p>
+
+    <hr>
+
+    <h2>About the 3D Mars Map</h2>
+
+    <p>
+    This image shows Mars as a globe.
+    It helps us understand the planet's shape
+    and explore its important geological features.
+    </p>
+
+    <h3>NASA Resources</h3>
+
+    <a href="https://science.nasa.gov/mars/">
+    Visit NASA Mars
+    </a>
+
+    <br><br>
+
+    <a href="index.html">Back to Homepage</a>
+
+</center>
+
+</body>
+</html>
